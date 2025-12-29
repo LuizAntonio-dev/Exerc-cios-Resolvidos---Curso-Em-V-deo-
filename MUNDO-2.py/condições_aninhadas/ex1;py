@@ -1,0 +1,21 @@
+
+''' Escreva um programa para aprovar o empréstimo bancário para a compra 
+de uma casa. Pergunte o valor da casa, o salário do comprador e em quantos
+ anos ele vai pagar. A prestação mensal não pode exceder 30% do salário ou 
+ então o empréstimo será negado.'''
+
+sl = float(input('digite aqui seu salário e descubra se consegue fazer o empréstimo:'))
+anos = int(input('em quantos anos você quer pagar a casa?'))
+valor = float(input(' qual o valor que você deseja pagar na casa?'))
+
+preço = ( valor / (anos * 12) )
+
+sl2 = (sl * (30/100))
+
+if preço > sl2:
+    print('''QUE PENA!!!,\033[0;35;40m  infelimente \033[m seu perfil não foi liberado para fazer o empréstimo''')
+         
+elif preço <  sl2:
+    print('''PARABÉNS!!, SEU EMPRÉSTIMO FOI APROVADO, você deve pagar uma mensalidade no valor de
+          R$: \033[0;35;40m {}\033[m por \033[0;35;40m {} \033[m meses.'''.format(preço,(anos * 12)))
+
