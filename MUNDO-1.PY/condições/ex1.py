@@ -17,8 +17,8 @@ time.sleep(2)
 if num2 == num:
     print('PARABÉNS vc acertou o número!!')
 elif num2 >= "6":
-    print('vc é burro leia a pergunta de novo seu otário')
+    print('Tente novamente')
 else:
-    print('Puta merda, vc escreveu o número {} e vc digitou o número {}, tente novamente'.format(num2, num))
+    print(' vc escreveu o número {} e vc digitou o número {}, tente novamente'.format(num2, num))
 
 

@@ -17,6 +17,6 @@ print(letras2 )
 
 
 if letras2 == junto:
-    print( "bão")
+    print( "Muito bom")
 else:
-    print("não bão")
+    print("insatisfatório")

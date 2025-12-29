@@ -11,7 +11,7 @@ if len(frase2) < 4:
     print(' vc inseriu errado:, digite novamente seu otário')
 
 elif len(frase2) > 4:
-    print('vc inseriu errado seu otário')
+    print('vc inseriu o número errado, tente novamente')
     
 else:
     print('''           vc inseriu corretamente!!! 
