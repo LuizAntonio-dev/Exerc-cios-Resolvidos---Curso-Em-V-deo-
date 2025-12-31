@@ -6,25 +6,57 @@
 [ 5 ] sair do programa
 Seu programa deverá realizar a operação solicitada em cada caso.
 """
+opção = 0
 
-print("~~~~~ OPERAÇÕES ~~~~~ ")
+a = int(input("insira o primeiro valor"))
 
-a = int(input("insira o primeiro valor:"))
-        
-b = int(input("insira o segundo valor:"))
+b = int(input("insira o segundo valor"))
 
-c = int(input("Qual operação você quer realizar? \n [1] multiplicar\n [2] somar \n [3] maior \n [4] novos número\n [5]sair do programa?\n >>>>>> Qual opção você escolheu ?"))
+print('''    [ 1 ] somar
+    [ 2 ] multiplicar
+    [ 3 ] maior
+    [ 4 ] novos números
+    [ 5 ] sair do programa 
+      ''')
+opção = int(input("A opção que você escolheu foi:"))
 
-# [1] multiplicar [2] somar  [3] maior [4] novos número [5]sair do programa
 
-# while b > 0 or a > 0:
-#     if c == 1:
-#         print("a multiplicação entre os valores adicionados é igual a {}".format(a * b) )
-#     elif c == 2:
-#         print("a soma entre os dados adicionados é igual a {}".format(a + b ))
-#     elif c ==3:
-#         if a > b:
-#            print("{} é o maior número ".format(a))
-#         else:
-#            print("{} é o maior número ".format(b))
-    
+if opção == 1:
+    print(a * b)
+elif opção == 2:
+    print(a + b)
+elif opção == 3:
+    if a > b:
+        print(a)
+    elif a == b:
+           print("os valores são iguais")
+    else:
+        print(b)
+elif opção == 4:
+    while opção == 4:
+        a = int(input("insira o primeiro valor"))
+
+        b = int(input("insira o segundo valor"))
+
+        print('''   [ 1 ] somar
+            [ 2 ] multiplicar
+            [ 3 ] maior
+            [ 4 ] novos números
+            [ 5 ] sair do programa 
+            ''')
+        opção = int(input("A opção que você escolheu foi:"))
+elif opção == 5:
+    print("finalizado")
+else:
+    print("opção inválida, tente novamente")
+    a = int(input("insira o primeiro valor"))
+
+    b = int(input("insira o segundo valor"))
+
+    print('''  [ 1 ] somar
+        [ 2 ] multiplicar
+        [ 3 ] maior
+        [ 4 ] novos números
+        [ 5 ] sair do programa 
+        ''')
+    opção = int(input("A opção que você escolheu foi:")) 
